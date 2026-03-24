@@ -1,6 +1,6 @@
 # Environment files (SECRET)
 .env
-.env.*
+
 
 # Python cache
 __pycache__/
