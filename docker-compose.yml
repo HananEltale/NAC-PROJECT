@@ -53,8 +53,10 @@ services:
       - "1812:1812/udp"
       - "1813:1813/udp"
     volumes:
-      - ./freeradius/config/users:/etc/raddb/users
-      - ./freeradius/config/clients.conf:/etc/raddb/clients.conf
+      - ./freeradius/config/clients.conf:/etc/freeradius/clients.conf
+      - ./freeradius/config/mods-available/sql:/etc/freeradius/mods-available/sql
+      - ./freeradius/config/mods-enabled/sql:/etc/freeradius/mods-enabled/sql
+      - ./freeradius/config/sites-enabled/default:/etc/freeradius/sites-enabled/default
     depends_on:
       postgres:
         condition: service_healthy

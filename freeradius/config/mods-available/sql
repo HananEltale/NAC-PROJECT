@@ -1,0 +1,12 @@
+sql {
+    driver = "rlm_sql_postgresql"
+    dialect = "postgresql"
+
+    server = "postgres"
+    port = 5432
+    login = "nacuser"
+    password = "nacpass"
+    radius_db = "nac"
+
+    read_clients = no
+}

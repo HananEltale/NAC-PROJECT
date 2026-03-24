@@ -1,1 +1,3 @@
+
+## users file not used, authentication handled via SQL
 testuser Cleartext-Password := "test123"
